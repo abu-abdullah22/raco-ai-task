@@ -16,7 +16,34 @@
 
 .content {
   text-align: center;
-  mix-blend-mode: difference;
+  z-index: 20;
+}
+
+.statusBadge {
+  display: inline-flex;
+  padding: 8px 20px;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  border-radius: var(--radius-full);
+  margin-bottom: 24px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.statusText {
+  font-family: var(--font-geist-mono);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #fff; /* High contrast white */
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.8; }
 }
 
 .heading {

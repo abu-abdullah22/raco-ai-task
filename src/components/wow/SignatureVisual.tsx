@@ -49,16 +49,8 @@ function CrystallizingObj() {
   useLayoutEffect(() => {
     // We need to find the trigger element (the section)
     // Since this is inside Canvas, we look up the DOM
-    const canvas = meshRef.current?.parent?.parent; // rough approximation or use ID
-    // Better: use a dedicated trigger element ID from the parent
-    
     // For simplicity, let's assume the parent section is the trigger. 
     // In R3F, accessing DOM outside is tricky without refs.
-    // Let's rely on a global or body scroll for now or pass a ref if we could.
-    // Actually, we can just trigger on 'body' or specific class if we know it matches.
-    
-    // Instead, let's use the canvas container as trigger if possible, or context.
-    // But since `Signature.tsx` sets height 300vh, we can use that class name if unique.
     
     const ctx = gsap.context(() => {
         ScrollTrigger.create({
@@ -133,8 +125,6 @@ export default function SignatureVisual() {
       <Float speed={2} rotationIntensity={0.5} floatIntensity={0.5}>
          <CrystallizingObj />
       </Float>
-      
-      {/* <Environment preset="city" /> */}
     </Canvas>
   );
 }

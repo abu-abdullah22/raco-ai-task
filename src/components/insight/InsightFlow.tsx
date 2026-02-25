@@ -1,17 +1,13 @@
 "use client";
 
 import { Container } from "@/components/ui/Container";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { Cpu, Database, Lightbulb } from "lucide-react";
 import { useRef } from "react";
 import styles from "./InsightFlow.module.css";
 
 export function InsightFlow() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
 
   const steps = [
     {
