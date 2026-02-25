@@ -28,9 +28,9 @@ In the "Signature" section, we implemented a scroll-triggered lerp between rando
 The Dashboard Preview uses Framer Motion's `whileInView` with a 3D rotation (`rotateX: 10`) to create a floating "window" effect that feels tactile and modern.
 
 ## 📂 Deliverables
-- **Design Philosophy**: Code-First Design (System articulated in [ProductDocumentation.md](./ProductDocumentation.md))
+- **Design Philosophy**: Code-First Design (System articulated in the Product Documentation)
 - **Walkthrough Video**: [Watch Demo Video](https://youtube.com/...) *(User to provide)*
-- **Product Documentation**: [ProductDocumentation.md](./ProductDocumentation.md) - Full breakdown of vision, architecture, and design tokens.
+- **Product Documentation**: Detailed breakdown of vision, architecture, and design tokens (Provided separately).
 
 ## 💻 Getting Started
 
